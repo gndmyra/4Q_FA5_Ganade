@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+            do{
+                var no=prompt("Please enter a number:");
+            } while (isNaN(no)==true || no=="");
+
+            document.write("Number inputted: "+no+"<br>");
+
+            var a, b;
+
+            if(no%2===0){
+                var x=no
+                for(a=1;a<=no;a++){
+                    for(b=1;b<=x;b++){
+                        document.write(x);
+                    }
+                    document.write("<br>");
+                    x--;
+                }
+            } else{
+                var x=no
+                for(a=1;a<=no;a++){
+                    for(b=1;b<=no;b++){
+                        document.write(x);
+                    }
+                    document.write("<br>");
+                    x--;
+                }
+            }
+
+    </script>
+</body>
+</html>

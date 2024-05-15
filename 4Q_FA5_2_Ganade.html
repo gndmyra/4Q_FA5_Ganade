@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name">
+    <button onclick="add()">Add</button>
+    <button onclick="remove()">Remove</button>
+    <p id="output"></p>
+
+    <script>
+        var list=[];
+
+        function add(){
+            var x;
+            x=document.getElementById('name').value;
+
+            if(list.length>=7){
+                list.shift();
+            }
+            list.push(x)
+
+            document.getElementById("output").innerHTML=list;
+        }
+
+        function remove(){
+            list.pop();
+
+            if(list.length>=7){
+                list.shift();
+            }
+            
+            document.getElementById("output").innerHTML=list;
+        }
+
+    </script>
+</body>
+</html>
